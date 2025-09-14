@@ -1,0 +1,18 @@
+# 🎓 Student Grade & Eligibility Checker (VB.NET)
+
+This is a simple VB.NET console application that demonstrates **all types of conditional statements**:
+
+- `If … Then`
+- `If … ElseIf … Else`
+- `Select Case`
+
+It asks the user for marks, decides **pass/fail**, assigns a **grade**, and then gives **remarks or scholarship eligibility**.
+
+---
+
+## 📝 Features
+
+- Prompt the user to input their marks.
+- Use **If…Then** to check **pass/fail**.
+- Use **If…ElseIf…Else** to determine **grade**.
+- Use **Select Case** to show **remarks/scholarship eligibility** based on grade.

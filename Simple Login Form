@@ -1,0 +1,59 @@
+# VB.NET Windows Forms – Simple Login Form
+
+This project is a simple **VB.NET Windows Forms Application** that demonstrates how to implement a basic login form with username and password validation.
+
+---
+
+## 📂 Features
+
+- **Windows Forms UI** with two TextBoxes for username and password, and one Button to log in.
+- **Trim() and ToLower()** used to:
+  - Remove extra spaces from input.
+  - Make login check case-insensitive.
+- Shows **message boxes** to inform the user of successful or failed login.
+- **Clears input fields** after login attempt.
+
+---
+
+## 🛠️ Technologies Used
+
+- **Language**: Visual Basic .NET  
+- **Framework**: .NET Framework 4.x  
+- **IDE**: Visual Studio (2019/2022)  
+- **GUI**: Windows Forms  
+
+---
+
+## ⚙️ How to Run
+
+1. Open Visual Studio.
+2. Go to **File → New → Project → Windows Forms App (.NET Framework)**.
+3. Place:
+   - `TextUser` TextBox (for username)
+   - `TextPass` TextBox (for password)
+   - `Button1` Button (to trigger login)
+4. Paste the code into `Form1.vb`.
+5. Press **F5** to run the application.
+6. Enter:
+   - Username: `admin`
+   - Password: `123`
+
+If credentials match → **“Login Successful”** message box appears.  
+Otherwise → **“Error”** message box appears.  
+
+---
+
+## 📝 Code Highlights
+
+```vbnet
+Dim Username As String = TextUser.Text.Trim().ToLower()
+Dim Password As String = TextPass.Text.Trim().ToLower()
+
+If Username.Equals("admin") And Password.Equals("123") Then
+    MessageBox.Show("Login Successful", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+Else
+    MessageBox.Show("Error", "information", MessageBoxButtons.OK, MessageBoxIcon.Error)
+End If
+
+TextUser.Clear()
+TextPass.Clear()
